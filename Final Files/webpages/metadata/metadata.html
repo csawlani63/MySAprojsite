@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My website</title>
+    <link rel="stylesheet" href="metadata.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Da+2:wght@400;500;600;700;800&family=Oswald:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="script.js" type="module"></script>
+  </head>
+  <body>
+    <div class="container">
+      <section class="section-1">
+        <div class="banner">
+          <h1 class="banner-heading">
+            <span class="heading">Metadata Sniffing</span>
+          </h1>
+          <p class="banner-paragraph">Informs you of your metadata leaked by your browser.</p>
+          <p class="disclaimer">Disclaimer: This metadata information is not shared to anyone or stored on our databases. This is for educational purposes only.</p>
+        </div>
+      </section>
+
+      <section class="section-2">
+        <div class="sec-2">
+          <h1 class="section-2-heading">What is<br>metadata<br>sniffing?</h1>
+          <div class="section-2-heading-line"></div>
+          <div class="video-wrapper">
+            <iframe class="video"
+              src="https://www.youtube.com/embed/PrgJMuSmkuU?si=UWsrZ93lRTkDUIXl">
+            </iframe>
+          </div>
+          <p class="section-2-paragraph">
+            In simple terms, sniffing is the act of intercepting and monitoring traffic on a network. As such, metadata sniffing is retrieving metadata from network traffic between the browser and the internet. This is possible because the metadata leaks from your browser. This metadata is/can be:<br>&#x2022;Your public IP address and your geolocation<br>&#x2022;Your operating system and browser details<br>&#x2022;Your browser cookies that contain credentials and your network details<br>Fortunately, you can minimize this by using a VPN and erasing any and all metadata of anything you upload. Unfortunately, it is impossible to keep all of your metadata hidden, for example, it is currently not possible to hide your OS from a website.<br>If you want to try and see if your metadata can be retrieved, I recommend turning off any tracker blockers so your metadata can be displayed appropriately.
+          </p>
+        </div>
+      </section>
+
+      <section class="section-3">
+        <div class="sec-3">
+          <h1 class="section-3-heading">IP address<br>security threats</h1>
+          <div class="section-3-heading-line"></div>
+          <div class="wrapper"></div>
+          <h3 class="my-ip-address">My IP address:</h3>
+          <div class="my-ip-address-line"></div>
+          <p class="ip-address">IP address</p>
+          <div class="ip-address-vert-line"></div>
+          <p class="ip" id="ip"></p>
+          <h3 class="geolocation">IP address location:</h3>
+          <div class="geolocation-line"></div>
+          <p class="country-text">Country</p>
+          <div class="country-vert-line"></div>
+          <p class="country" id="country"></p>
+          <p class="country_code" id="country_code"></p>
+          <div class="country-line"></div>
+          <p class="state-text">State/Region</p>
+          <div class="state-vert-line"></div>
+          <p class="state" id="state"></p>
+          <p class="state_code" id="state_code"></p>
+          <div class="state-line"></div>
+          <p class="city-text">City</p>
+          <div class="city-vert-line"></div>
+          <p class="city" id="city"></p>
+          <div class="city-line"></div>
+          <p class="coordinates">Coordinates</p>
+          <div class="coordinates-vert-line"></div>
+          <p class="latitude" id="latitude"></p>
+          <p class="longitude" id="longitude"></p>
+          <div class="coordinates-line"></div>
+          <p class="abbr-text">Timezone</p>
+          <div class="abbr-vert-line"></div>
+          <p class="abbr" id="abbr"></p>
+          <div class="abbr-line"></div>
+          <p class="time-text">Local Time</p>
+          <div class="time-vert-line"></div>
+          <p class="time" id="time"></p>
+          <button class="button">Click to reveal.</button>
+          <p class="section-3-paragraph">
+            If attackers know your IP address, they can get an idea of your location, and through cross-referencing with social media, they can get your identity. They can then launch attacks against you or even impersonate you. It is important to be aware of the risks caused by your IP address leaking through your browser:<br>&#x2022;Malicious users can know your location as showcased above. Through social media, they can find out your exact address, leaving you open to burglary when they know you are away.<br>&#x2022; Attackers can directly attack your network. One of the most popular network attacks is a DDoS attack, which many individuals especially online gamers are at risk of.
+          </p>
+        </div>
+      </section>
+
+      <section class="section-4">
+        <div class="sec-4">
+          <h1 class="section-4-heading">Other<br>security<br>threats</h1>
+          <div class="section-4-heading-line"></div>
+          <div class="wrapper-2"></div>
+          <h3 class="HTTP-headers">HTTP headers:</h3>
+          <div class="HTTP-headers-line"></div>
+          <p class="agent-text">User-agent</p>
+          <div class="agent-vert-line"></div>
+          <p class="user-agent" id="user-agent"></p>
+          <div class="agent-line"></div>
+          <p class="browser-text">Sec-CH-UA</p>
+          <div class="browser-vert-line"></div>
+          <p class="browser" id="browser"></p>
+          <div class="browser-line"></div>
+          <p class="os-text">Sec-CH-UA-Platform</p>
+          <div class="os-vert-line"></div>
+          <p class="os" id="os"></p>
+          <p class="os-version" id="os-version"></p>
+          <div class="os-line"></div>
+          <p class="os-arch-text">Sec-CH-UA-Arch</p>
+          <div class="os-arch-vert-line"></div>
+          <p class="os-arch" id="os-arch"></p>
+          <div class="os-arch-line"></div>
+          <p class="os-bit-text">Sec-CH-UA-Bitness</p>
+          <div class="os-bit-vert-line"></div>
+          <p class="os-bit" id="os-bit"></p>
+          <h3 class="network-info">Network information:</h3>
+          <div class="network-info-line"></div>
+          <div class="isp-text">ISP</div>
+          <div class="isp-vert-line"></div>
+          <p class="isp" id="isp"></p>
+          <div class="isp-line"></div>
+          <p class="network-text">Network</p>
+          <div class="network-vert-line"></div>
+          <p class="network" id="network"></p>
+          <button class="button-2">Click to reveal.</button>
+          <p class="section-4-paragraph">
+            If hackers gain information about your operating system or browser, they can find out what security vulnerabilities to exploit, which is why it is always recommended to update your operating system and browser whenever possible for security patches. Once a hacker finds out these security vulnerabilities, you can be at a greater risk of a data breach.<br><br>Possible consequences of other leaks like browser cookies can be that hackers have access to your account and any credentials stored on the browser of that website. It is best to clear cookies whenever possible since hackers have other means of acquiring these such as xss attacks. You can check your cookies on a website under "Application" in inspect element.
+          </p>
+        </div>
+      </section>
+    </div>
+
+    <!--Sidebar-->
+    <a href="../../index.html"><img class="home" src="../../images/home.png"></a>
+    <a href="metadata.html"><img class="metadata" src="../../images/metadata.png"></a>
+    <a href="../malware/malware.html"><img class="malware" src="../../images/bug.png"></a>
+    <a href="https://github.com/csawlani63/MySAprojsite"><img class="github" src="../../images/github.png"></a>
+    <a href="https://www.instagram.com/chiruu03/"><img class="instagram" src="../../images/insta.png"></a>
+    <!--End of sidebar-->
+  </body>
+</html>

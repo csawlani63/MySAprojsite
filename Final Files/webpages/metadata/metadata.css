@@ -1,0 +1,963 @@
+/* Common Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    text-decoration: none;
+    list-style-type: none;
+    font-family: "Oswald", sans-serif;
+}
+
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+/* End of Common Styles */
+
+/* Section 1 */
+.section-1 {
+    width: 100%;
+    height: 60vh;
+    background-color: #5e5e5e;
+    background-size: cover;
+}
+
+.banner {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    width: 100%;
+    visibility: hidden;
+    opacity: 0;
+    animation: fadeAnimation 2s 1.5s forwards;
+}
+
+.banner-heading {
+    height: 20rem;
+    margin-bottom: 2rem;
+    perspective: 50rem;
+    overflow: hidden;
+}
+
+.banner-heading span {
+    font-family: "Oswald", sans-serif;
+    font-size: 12rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #fff;
+    text-shadow: 0.5rem 0.5rem 0.8rem rgba(10, 1, 1);
+    position: absolute;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    opacity: 1;
+    letter-spacing: 2rem;
+}
+
+.banner-paragraph {
+    font-size: 200%;
+    font-weight: 400;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: #fff;
+    width: 100%;
+    margin: 0 auto 6rem auto;
+    opacity: 1;
+}
+
+@keyframes fadeAnimation {
+0% {
+    opacity: 0;
+    visibility: hidden;
+}
+100% {
+    opacity: 1;
+    visibility: visible;
+}
+}
+
+.disclaimer {
+    width: 100rem;
+    height: 50rem;
+    position: absolute;
+    font-size: 15pt;
+    text-decoration: underline;
+    top: 28rem;
+    left: 46rem;
+    color: #fff;
+    text-shadow: #00000000;
+}
+/* End of Section 1 */
+
+/* Section 2 */
+.section-2 {
+    width: 100%;
+    height: 100vh;
+    background-color: #222020;
+    display: flex;
+    align-items: center;
+    padding: 0 10rem;
+    position: relative;
+}
+
+.sec-2 {
+    visibility: hidden;
+    opacity: 0;
+    animation: fadeAnimation 2s 1.5s forwards;
+}
+
+.section-2-heading {
+    font-size: 10rem;
+    font-family: "Oswald", sans-serif;
+    font-weight: 300;
+    color: #ddd;
+    margin-right: 4rem;
+    text-align: justify;
+  }
+  
+.section-2-heading-line {
+    position: absolute;
+    width: 15rem;
+    height: 0.2rem;
+    background-color: #ddd;
+    left: 50rem;
+    bottom: 45rem;
+}
+
+.video-wrapper {
+    width: 100rem;
+    height: 50rem;
+    position: absolute;
+    top: 5rem;
+    right: 15rem;
+    box-shadow: 3rem 3rem 6rem rgba(0, 0, 0, 0.7);
+    overflow: hidden;
+}
+
+.video {
+    width: 100rem;
+    height: 50rem;
+}
+
+.section-2-paragraph {
+    width: 100rem;
+    position: absolute;
+    bottom: 2rem;
+    right: 15rem;
+    font-size: 2rem;
+    line-height: 1.5;
+    color: #ddd;
+    border-top: 0.3rem double #aaa;
+    border-bottom: 0.3rem double #aaa;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: justify;
+    text-shadow: 1rem 1rem 2rem rgba(0, 0, 0, 0.7);
+}
+/* End of Section 2 */
+
+/* Section 3 */
+.section-3 {
+    width: 100%;
+    height: 100vh;
+    background-color: #493b3b;
+    display: flex;
+    align-items: center;
+    padding: 0 10rem;
+    position: relative;
+}
+
+.sec-3 {
+    visibility: hidden;
+    opacity: 0;
+    animation: fadeAnimation 2s 1.5s forwards;
+    color: #f2f2f2;
+}
+
+.section-3-heading {
+    font-size: 10rem;
+    font-family: "Oswald", sans-serif;
+    font-weight: 300;
+    color: #ddd;
+    margin-left: 144rem;
+    text-align: justify;
+}
+
+.section-3-heading-line {
+    width: 15rem;
+    height: 0.2rem;
+    background-color: #ce9999;
+    position: absolute;
+    right: 50rem;
+    bottom: 45rem;
+}
+
+.wrapper {
+    width: 100rem;
+    height: 50rem;
+    position: absolute;
+    top: 5rem;
+    left: 15rem;
+    box-shadow: 3rem 3rem 6rem rgba(0, 0, 0, 0.7);
+    overflow: hidden;
+    background-color: #dddddd10;
+}
+
+.button {
+    background: #493b3b;
+    color: #ffffff;
+    opacity: 1;
+    visibility: visible;
+    width: 100rem;
+    height: 50rem;
+    position: absolute;
+    top: 5rem;
+    left: 15rem;
+    border: none;
+}
+
+.hidden-button {
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s 2s, opacity 2s linear;
+}
+
+.my-ip-address {
+    width: 100rem;
+    height: 50rem;
+    position: absolute;
+    font-size: 24pt;
+    top: 6rem;
+    left: 17rem;
+}
+
+.my-ip-address-line {
+    width: 95rem;
+    height: 0.2rem;
+    background-color: #eec29e;
+    position: absolute;
+    top: 11rem;
+    left: 17rem;
+}
+
+.ip-address {
+    width: 100rem;
+    height: 50rem;
+    position: absolute;
+    font-size: 20pt;
+    top: 11rem;
+    left: 17rem;
+}
+
+.ip-address-vert-line {
+    width: 3rem;
+    height: 0.2rem;
+    background-color: #eec29e;
+    position: absolute;
+    top: 13rem;
+    left: 40rem;
+    transform: rotate(90deg);
+}
+
+.ip {
+    width: 100rem;
+    height: 50rem;
+    position: absolute;
+    font-size: 20pt;
+    top: 11rem;
+    left: 43rem;
+}
+
+.geolocation {
+    width: 100rem;
+    height: 50rem;
+    position: absolute;
+    font-size: 24pt;
+    top: 17rem;
+    left: 17rem;
+}
+
+.geolocation-line {
+    width: 95rem;
+    height: 0.2rem;
+    background-color: #eec29e;
+    position: absolute;
+    top: 22rem;
+    left: 17rem;
+}
+
+.country-text {
+    width: 100rem;
+    height: 50rem;
+    position: absolute;
+    font-size: 20pt;
+    top: 22rem;
+    left: 17rem;
+}
+
+.country-vert-line {
+    width: 3rem;
+    height: 0.2rem;
+    background-color: #eec29e;
+    position: absolute;
+    top: 24rem;
+    left: 40rem;
+    transform: rotate(90deg);
+}
+
+.country {
+    width: 100rem;
+    height: 50rem;
+    position: absolute;
+    font-size: 20pt;
+    top: 22rem;
+    left: 43rem;
+}
+
+.country_code {
+    width: 100rem;
+    height: 50rem;
+    position: absolute;
+    font-size: 20pt;
+    top: 22rem;
+    left: 70rem;
+}
+
+.country-line {
+    width: 95rem;
+    height: 0.2rem;
+    background-color: #eec29e;
+    position: absolute;
+    top: 26rem;
+    left: 17rem;
+}
+
+.state-text {
+    width: 100rem;
+    height: 50rem;
+    position: absolute;
+    font-size: 20pt;
+    top: 26rem;
+    left: 17rem;
+}
+
+.state-vert-line {
+    width: 3rem;
+    height: 0.2rem;
+    background-color: #eec29e;
+    position: absolute;
+    top: 28rem;
+    left: 40rem;
+    transform: rotate(90deg);
+}
+
+.state {
+    width: 100rem;
+    height: 50rem;
+    position: absolute;
+    font-size: 20pt;
+    top: 26rem;
+    left: 43rem;
+}
+
+.state_code {
+    width: 100rem;
+    height: 50rem;
+    position: absolute;
+    font-size: 20pt;
+    top: 26rem;
+    left: 70rem;
+}
+
+.state-line {
+    width: 95rem;
+    height: 0.2rem;
+    background-color: #eec29e;
+    position: absolute;
+    top: 30rem;
+    left: 17rem;
+}
+
+.city-text {
+    width: 100rem;
+    height: 50rem;
+    position: absolute;
+    font-size: 20pt;
+    top: 30rem;
+    left: 17rem;
+}
+
+.city-vert-line {
+    width: 3rem;
+    height: 0.2rem;
+    background-color: #eec29e;
+    position: absolute;
+    top: 32rem;
+    left: 40rem;
+    transform: rotate(90deg);
+}
+
+.city {
+    width: 100rem;
+    height: 50rem;
+    position: absolute;
+    font-size: 20pt;
+    top: 30rem;
+    left: 43rem;
+}
+
+.city-line {
+    width: 95rem;
+    height: 0.2rem;
+    background-color: #eec29e;
+    position: absolute;
+    top: 34rem;
+    left: 17rem;
+}
+
+.coordinates {
+    width: 100rem;
+    height: 50rem;
+    position: absolute;
+    font-size: 20pt;
+    top: 34rem;
+    left: 17rem;
+}
+
+.coordinates-vert-line {
+    width: 3rem;
+    height: 0.2rem;
+    background-color: #eec29e;
+    position: absolute;
+    top: 36rem;
+    left: 40rem;
+    transform: rotate(90deg);
+}
+
+.latitude {
+    width: 100rem;
+    height: 50rem;
+    position: absolute;
+    font-size: 20pt;
+    top: 34rem;
+    left: 43rem;
+}
+
+.longitude {
+    width: 100rem;
+    height: 50rem;
+    position: absolute;
+    font-size: 20pt;
+    top: 34rem;
+    left: 55rem;
+}
+
+.coordinates-line {
+    width: 95rem;
+    height: 0.2rem;
+    background-color: #eec29e;
+    position: absolute;
+    top: 38rem;
+    left: 17rem;
+}
+
+.abbr-text {
+    width: 100rem;
+    height: 50rem;
+    position: absolute;
+    font-size: 20pt;
+    top: 38rem;
+    left: 17rem;
+}
+
+.abbr-vert-line {
+    width: 3rem;
+    height: 0.2rem;
+    background-color: #eec29e;
+    position: absolute;
+    top: 40rem;
+    left: 40rem;
+    transform: rotate(90deg);
+}
+
+.abbr {
+    width: 100rem;
+    height: 50rem;
+    position: absolute;
+    font-size: 20pt;
+    top: 38rem;
+    left: 43rem;
+}
+
+.abbr-line {
+    width: 95rem;
+    height: 0.2rem;
+    background-color: #eec29e;
+    position: absolute;
+    top: 42rem;
+    left: 17rem;
+}
+
+.time-text {
+    width: 100rem;
+    height: 50rem;
+    position: absolute;
+    font-size: 20pt;
+    top: 42rem;
+    left: 17rem;
+}
+
+.time-vert-line {
+    width: 3rem;
+    height: 0.2rem;
+    background-color: #eec29e;
+    position: absolute;
+    top: 44rem;
+    left: 40rem;
+    transform: rotate(90deg);
+}
+
+.time {
+    width: 100rem;
+    height: 50rem;
+    position: absolute;
+    font-size: 20pt;
+    top: 42rem;
+    left: 43rem;
+}
+
+.section-3-paragraph {
+    width: 100rem;
+    position: absolute;
+    bottom: 8rem;
+    left: 15rem;
+    font-size: 2rem;
+    line-height: 1.5;
+    color: #ddd;
+    border-top: 0.3rem double #aaa;
+    border-bottom: 0.3rem double #aaa;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: justify;
+    text-shadow: 1rem 1rem 2rem rgba(0, 0, 0, 0.7);
+}
+/* End of Section 3*/
+
+/* Section 4 */
+.section-4 {
+    width: 100%;
+    height: 100vh;
+    background-color: #222020;
+    display: flex;
+    align-items: center;
+    padding: 0 10rem;
+    position: relative;
+}
+
+.sec-4 {
+    visibility: hidden;
+    opacity: 0;
+    animation: fadeAnimation 2s 1.5s forwards;
+    color: #f2f2f2;
+}
+
+.section-4-heading {
+    font-size: 10rem;
+    font-family: "Oswald", sans-serif;
+    font-weight: 300;
+    color: #ddd;
+    margin-right: 4rem;
+    text-align: justify;
+}
+  
+.section-4-heading-line {
+    position: absolute;
+    width: 15rem;
+    height: 0.2rem;
+    background-color: #ddd;
+    left: 50rem;
+    bottom: 45rem;
+}
+
+.wrapper-2 {
+    width: 100rem;
+    height: 50rem;
+    position: absolute;
+    top: 5rem;
+    right: 15rem;
+    box-shadow: 3rem 3rem 6rem rgba(0, 0, 0, 0.7);
+    background-color: #dddddd10;
+    overflow: hidden;
+}
+
+.HTTP-headers {
+    width: 50rem;
+    height: 5rem;
+    position: absolute;
+    font-size: 24pt;
+    top: 6rem;
+    right: 63rem;
+}
+
+.HTTP-headers-line {
+    width: 95rem;
+    height: 0.2rem;
+    background-color: #eec29e;
+    position: absolute;
+    top: 11rem;
+    right: 18rem;
+}
+
+.agent-text {
+    width: 50rem;
+    height: 5rem;
+    position: absolute;
+    font-size: 20pt;
+    top: 11rem;
+    right: 63rem;
+}
+
+.agent-vert-line {
+    width: 3rem;
+    height: 0.2rem;
+    background-color: #eec29e;
+    position: absolute;
+    top: 13rem;
+    left: 99rem;
+    transform: rotate(90deg);
+}
+
+.user-agent {
+    width: 67rem;
+    height: 10rem;
+    position: absolute;
+    font-size: 18pt;
+    top: 11rem;
+    left: 102rem;
+}
+
+.agent-line {
+    width: 95rem;
+    height: 0.2rem;
+    background-color: #eec29e;
+    position: absolute;
+    top: 19rem;
+    right: 18rem;
+}
+
+.browser-text {
+    width: 50rem;
+    height: 5rem;
+    position: absolute;
+    font-size: 20pt;
+    top: 19rem;
+    right: 63rem;
+}
+
+.browser-vert-line {
+    width: 3rem;
+    height: 0.2rem;
+    background-color: #eec29e;
+    position: absolute;
+    top: 21rem;
+    left: 99rem;
+    transform: rotate(90deg);
+}
+
+.browser {
+    width: 70rem;
+    height: 5rem;
+    position: absolute;
+    font-size: 20pt;
+    top: 19rem;
+    left: 102rem;
+}
+
+.browser-line {
+    width: 95rem;
+    height: 0.2rem;
+    background-color: #eec29e;
+    position: absolute;
+    top: 23rem;
+    right: 18rem;
+}
+
+.os-text {
+    width: 50rem;
+    height: 5rem;
+    position: absolute;
+    font-size: 20pt;
+    top: 23rem;
+    right: 63rem;
+}
+
+.os-vert-line {
+    width: 3rem;
+    height: 0.2rem;
+    background-color: #eec29e;
+    position: absolute;
+    top: 25rem;
+    left: 99rem;
+    transform: rotate(90deg);
+}
+
+.os {
+    width: 50rem;
+    height: 5rem;
+    position: absolute;
+    font-size: 20pt;
+    top: 23rem;
+    left: 102rem;
+}
+
+.os-version {
+    width: 50rem;
+    height: 5rem;
+    position: absolute;
+    font-size: 20pt;
+    top: 23rem;
+    left: 113rem;
+}
+
+.os-line {
+    width: 95rem;
+    height: 0.2rem;
+    background-color: #eec29e;
+    position: absolute;
+    top: 27rem;
+    right: 18rem;
+}
+
+.os-arch-text {
+    width: 50rem;
+    height: 5rem;
+    position: absolute;
+    font-size: 20pt;
+    top: 27rem;
+    right: 63rem;
+}
+
+.os-arch-vert-line {
+    width: 3rem;
+    height: 0.2rem;
+    background-color: #eec29e;
+    position: absolute;
+    top: 29rem;
+    left: 99rem;
+    transform: rotate(90deg);
+}
+
+.os-arch {
+    width: 50rem;
+    height: 5rem;
+    position: absolute;
+    font-size: 20pt;
+    top: 27rem;
+    left: 102rem;
+}
+
+.os-arch-line {
+    width: 95rem;
+    height: 0.2rem;
+    background-color: #eec29e;
+    position: absolute;
+    top: 31rem;
+    right: 18rem;
+}
+
+.os-bit-text {
+    width: 50rem;
+    height: 5rem;
+    position: absolute;
+    font-size: 20pt;
+    top: 31rem;
+    right: 63rem;
+}
+
+.os-bit-vert-line {
+    width: 3rem;
+    height: 0.2rem;
+    background-color: #eec29e;
+    position: absolute;
+    top: 33rem;
+    left: 99rem;
+    transform: rotate(90deg);
+}
+
+.os-bit {
+    width: 50rem;
+    height: 5rem;
+    position: absolute;
+    font-size: 20pt;
+    top: 31rem;
+    left: 102rem;
+}
+
+.network-info {
+    width: 50rem;
+    height: 5rem;
+    position: absolute;
+    font-size: 24pt;
+    top: 37rem;
+    right: 63rem;
+}
+
+.network-info-line {
+    width: 95rem;
+    height: 0.2rem;
+    background-color: #eec29e;
+    position: absolute;
+    top: 42rem;
+    right: 18rem;
+}
+
+.isp-text {
+    width: 50rem;
+    height: 5rem;
+    position: absolute;
+    font-size: 20pt;
+    top: 42rem;
+    right: 63rem;
+}
+
+.isp-vert-line {
+    width: 3rem;
+    height: 0.2rem;
+    background-color: #eec29e;
+    position: absolute;
+    top: 44rem;
+    left: 99rem;
+    transform: rotate(90deg);
+}
+
+.isp {
+    width: 50rem;
+    height: 5rem;
+    position: absolute;
+    font-size: 20pt;
+    top: 42rem;
+    left: 102rem;
+}
+
+.isp-line {
+    width: 95rem;
+    height: 0.2rem;
+    background-color: #eec29e;
+    position: absolute;
+    top: 46rem;
+    right: 18rem;
+}
+
+.network-text {
+    width: 50rem;
+    height: 5rem;
+    position: absolute;
+    font-size: 20pt;
+    top: 46rem;
+    right: 63rem;
+}
+
+.network-vert-line {
+    width: 3rem;
+    height: 0.2rem;
+    background-color: #eec29e;
+    position: absolute;
+    top: 48rem;
+    left: 99rem;
+    transform: rotate(90deg);
+}
+
+.network {
+    width: 50rem;
+    height: 5rem;
+    position: absolute;
+    font-size: 20pt;
+    top: 46rem;
+    left: 102rem;
+}
+
+.button-2 {
+    background: #222020;
+    color: #ffffff;
+    opacity: 1;
+    visibility: visible;
+    width: 100rem;
+    height: 50rem;
+    position: absolute;
+    top: 5rem;
+    right: 15rem;
+    border: none;
+}
+
+.hidden-button-2 {
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s 2s, opacity 2s linear;
+}
+
+.section-4-paragraph {
+    width: 100rem;
+    position: absolute;
+    bottom: 8rem;
+    right: 15rem;
+    font-size: 2rem;
+    line-height: 1.5;
+    color: #ddd;
+    border-top: 0.3rem double #aaa;
+    border-bottom: 0.3rem double #aaa;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: justify;
+    text-shadow: 1rem 1rem 2rem rgba(0, 0, 0, 0.7);
+}
+/* End of Section 4 */
+
+/* Sidebar */
+.home {
+    width: 40px;
+    height: 40px;
+    top: 15vh;
+    left: 6px;
+    position: absolute;
+}
+
+.metadata {
+    width: 60px;
+    height: 60px;
+    top: 19rem;
+    left: -3px;
+    position: absolute;
+}
+  
+  .malware {
+    width: 35px;
+    height: 35px;
+    top: 255px;
+    left: 9px;
+    position: absolute;
+}
+
+.github {
+    width: 70px;
+    height: 40px;
+    top: 31rem;
+    left: -8px;
+    position: absolute;
+}
+
+.instagram {
+    width: 40px;
+    height: 40px;
+    top: 37rem;
+    left: 7px;
+    position: absolute;
+}
+/* End of sidebar */

@@ -961,3 +961,371 @@ html {
     position: absolute;
 }
 /* End of sidebar */
+
+/* Responsive */
+@media (max-width: 1800px) {
+  .video-wrapper,
+  .button-2,
+  .wrapper-2,
+  .video {
+    width: 90rem;
+    height: 45rem;
+    right: 10rem;
+  }
+
+  .button,
+  .wrapper {
+    width: 90rem;
+    height: 45rem;
+    left: 10rem;
+  }
+
+  .my-ip-address,
+  .ip-address,
+  .geolocation,
+  .country-text,
+  .state-text,
+  .city-text,
+  .coordinates,
+  .abbr-text,
+  .time-text {
+    width: 90rem;
+    height: 45rem;
+    left: 6rem;
+  }
+
+  .HTTP-headers,
+  .agent-text,
+  .browser-text,
+  .os-text,
+  .os-arch-text,
+  .os-bit-text,
+  .network-info,
+  .isp-text,
+  .network-text {
+    width: 45rem;
+    height: 5rem;
+    right: 44rem;
+  }
+
+  .my-ip-address-line,
+  .geolocation-line,
+  .country-line,
+  .state-line,
+  .city-line,
+  .coordinates-line,
+  .abbr-line {
+    width: 81rem;
+    left: 6rem;
+  }
+
+  .HTTP-headers-line,
+  .agent-line,
+  .browser-line,
+  .os-line,
+  .os-arch-line,
+  .network-info-line,
+  .isp-line {
+    width: 81rem;
+    right: 8rem;
+  }
+
+  .ip-address-vert-line,
+  .country-vert-line,
+  .state-vert-line,
+  .city-vert-line,
+  .coordinates-vert-line,
+  .abbr-vert-line,
+  .time-vert-line {
+    left: 30rem;
+  }
+
+  .agent-vert-line,
+  .os-vert-line,
+  .os-arch-vert-line,
+  .os-bit-vert-line,
+  .browser-vert-line,
+  .isp-vert-line,
+  .network-vert-line {
+    right: 30rem;
+  }
+
+  .ip,
+  .country,
+  .state,
+  .city,
+  .latitude,
+  .abbr,
+  .time {
+    width: 45rem;
+    height: 45rem;
+    left: 33rem;
+  }
+
+  .user-agent {
+    width: 59rem;
+    height: 9rem;
+    right: 33rem;
+    font-size: 18px;
+  }
+
+  .browser {
+    width: 63rem;
+    height: 5rem;
+    right: 33rem;
+    font-size: 18px;
+  }
+  .os,
+  .os-arch,
+  .os-bit,
+  .isp,
+  .network {
+    width: 45rem;
+    height: 5rem;
+    right: 33rem;
+  }
+
+  .country_code,
+  .state_code,
+  .longitude {
+    width: 90rem;
+    height: 45rem;
+    left: 60rem;
+  }
+
+  .os-version {
+    width: 10rem;
+    height: 5rem;
+    left: 120rem;
+  }
+
+  .section-2-paragraph,
+  .section-4-paragraph {
+    width: 90rem;
+    right: 10rem;
+  }
+
+  .section-3-paragraph {
+    width: 90rem;
+    left: 10rem;
+  }
+
+  .section-3-heading {
+    margin-left: 120rem;
+  }
+
+  .disclaimer {
+    top: 26rem;
+    left: 33rem;
+  }
+  
+  .metadata {
+    top: 22vh;
+  }
+
+  .malware {
+    top: 30vh;
+  }
+
+  .github {
+    top: 37vh;
+  }
+
+  .instagram {
+    top: 45vh;
+  }
+}
+
+@media (max-width: 1650px) {
+  html {
+    font-size: 57%;
+  }
+
+  .video-wrapper,
+  .button-2,
+  .wrapper-2,
+  .video {
+    width: 85rem;
+    height: 40rem;
+    right: 5rem;
+  }
+
+  .button,
+  .wrapper {
+    width: 85rem;
+    height: 40rem;
+    left: 5rem;
+  }
+
+  .my-ip-address,
+  .ip-address,
+  .geolocation,
+  .country-text,
+  .state-text,
+  .city-text,
+  .coordinates,
+  .abbr-text,
+  .time-text {
+    width: 90rem;
+    height: 45rem;
+    left: 6rem;
+  }
+
+  .HTTP-headers,
+  .agent-text,
+  .browser-text,
+  .os-text,
+  .os-arch-text,
+  .os-bit-text,
+  .network-info,
+  .isp-text,
+  .network-text {
+    width: 45rem;
+    height: 5rem;
+    right: 44rem;
+  }
+
+  .my-ip-address-line,
+  .geolocation-line,
+  .country-line,
+  .state-line,
+  .city-line,
+  .coordinates-line,
+  .abbr-line {
+    width: 81rem;
+    left: 6rem;
+  }
+
+  .HTTP-headers-line,
+  .agent-line,
+  .browser-line,
+  .os-line,
+  .os-arch-line,
+  .network-info-line,
+  .isp-line {
+    width: 81rem;
+    right: 8rem;
+  }
+
+  .ip-address-vert-line,
+  .country-vert-line,
+  .state-vert-line,
+  .city-vert-line,
+  .coordinates-vert-line,
+  .abbr-vert-line,
+  .time-vert-line {
+    left: 30rem;
+  }
+
+  .agent-vert-line,
+  .os-vert-line,
+  .os-arch-vert-line,
+  .os-bit-vert-line,
+  .browser-vert-line,
+  .isp-vert-line,
+  .network-vert-line {
+    right: 30rem;
+  }
+
+  .ip,
+  .country,
+  .state,
+  .city,
+  .latitude,
+  .abbr,
+  .time {
+    width: 45rem;
+    height: 45rem;
+    left: 33rem;
+  }
+
+  .user-agent {
+    width: 59rem;
+    height: 9rem;
+    right: 33rem;
+    font-size: 18px;
+  }
+
+  .browser {
+    width: 63rem;
+    height: 5rem;
+    right: 33rem;
+    font-size: 18px;
+  }
+  .os,
+  .os-arch,
+  .os-bit,
+  .isp,
+  .network {
+    width: 45rem;
+    height: 5rem;
+    right: 33rem;
+  }
+
+  .country_code,
+  .state_code,
+  .longitude {
+    width: 90rem;
+    height: 45rem;
+    left: 60rem;
+  }
+
+  .os-version {
+    width: 10rem;
+    height: 5rem;
+    left: 120rem;
+  }
+
+  .section-2-paragraph,
+  .section-4-paragraph {
+    width: 85rem;
+    right: 5rem;
+    bottom: 3rem;
+    font-size: 16px;
+  }
+
+  .section-3-paragraph {
+    width: 85rem;
+    left: 5rem;
+    bottom: 3rem;
+    font-size: 16px;
+  }
+
+  .section-3-heading {
+    margin-left: 120rem;
+  }
+
+  .disclaimer {
+    top: 26rem;
+    left: 33rem;
+  }
+
+  .metadata {
+    top: 22vh;
+  }
+
+  .malware {
+    top: 30vh;
+  }
+
+  .github {
+    top: 37vh;
+  }
+
+  .instagram {
+    top: 45vh;
+  }
+}
+
+@media (max-width: 1500px) {
+  .section-2-heading-line {
+    display: none;
+  }
+  .section-3-heading-line {
+    display: none;
+  }
+  .section-4-heading-line {
+    display: none;
+  }
+}
+/* End of Responsive */
